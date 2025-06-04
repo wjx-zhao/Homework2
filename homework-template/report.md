@@ -55,10 +55,9 @@
 
 
 ### 測試結果範例  
-![InsertionSort_A](<https://github.com/wjx-zhao/data1/blob/4622439096734b94a739a512aa0bad27003b2302/InsertionSort_A.jpg> "InsertionSort_A")  
 
-### 圖表
-![Insertion Sort](<https://raw.githubusercontent.com/Lin-3203/image/main/Insertion%20Sort.png>)  
+
+
 
 ## 申論及開發報告
 
@@ -126,10 +125,9 @@ Worst Case = $O(n²)$
 
 
 ### 測試結果範例
-![QuickSort_A](<https://github.com/wjx-zhao/data1/blob/bc652be7bcd38f48e35dba28272d7d9faa6937e8/QuickSort_A.jpg> "QuickSort_A")  
 
-### 圖表
-![Quick Sort](https://raw.githubusercontent.com/Lin-3203/image/main/Quick%20Sort.png)
+
+
 
 ## 申論及開發報告
 
@@ -194,10 +192,8 @@ Worst Case = $O(n²)$
 
 
 ### 測試結果範例  
-![MergeSort_A](<https://github.com/wjx-zhao/data1/blob/8ab4e63de24819376d82bdd0326eb798bd338b5d/MergeSort_A.jpg> "MergeSort_A")  
 
-### 圖
-![m.jpg](<https://github.com/wjx-zhao/data1/blob/6ee8d2ea3ee5c25260c9f70d16384e5c67d343dc/m.jpg> "m.jpg")  
+
 
 
 ## 申論及開發報告
