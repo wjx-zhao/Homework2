@@ -341,8 +341,8 @@ for (int n : ns) {
 
   1️⃣ 輸入參數
   
-    在 main 裡宣告：
 ```cpp
+在 main 裡宣告：
 double t_s = 0.08, t_l = 0.02, t_t = 0.001;
 int n = 200000, m = 64, S = 2000;
 double t_CPU = 50000;  // 供比較用   
