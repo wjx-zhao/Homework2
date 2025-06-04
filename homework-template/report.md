@@ -15,14 +15,17 @@
 ## 解題說明
 -最大堆積 (Max Heap)：每個父節點的值 ≥ 左右子節點 → 父節點最大，root是最大值。  
 -最小堆積 (Min Heap)：每個父節點的值 ≤ 左右子節點 → 父節點最小，root是最小值。  
+
 -index 0 為 root 節點：  
   1.父節點：(i - 1)/2  
   2.左子節點：2*i + 1  
   3.右子節點：2*i + 2  
--插入（Push）
+  
+-插入（Push）  
 1️.把新元素放在陣列的最後面。  
 2️.執行「Bubble Up / Shift Up」  
--刪除頂端（Pop）
+
+-刪除頂端（Pop）  
 1️.把最後一個元素移到 root（堆頂）。
 2️.移.除最後一個元素（現在 root 元素重複了）。
 3️.執行「Bubble Down / Shift Down」  
@@ -283,19 +286,34 @@ int main() {
 
 ### 測試結果範例  
 最大堆積測驗結果  
+![MaxHeap](https://github.com/wjx-zhao/data1/blob/a39b8617cc981eda337a4a64001beb242db9882f/MaxHeap.png)  
 
-
-
+最小堆積測驗結果  
+![MinHeap](https://github.com/wjx-zhao/data1/blob/a39b8617cc981eda337a4a64001beb242db9882f/MinHeap.png)  
 
 ## 申論及開發報告
+在許多資料結構與演算法問題中，如何在資料集中快速找到最大值或最小值是常見需求。  
+堆積（Heap） 是一種高效支援動態插入、刪除與查詢堆頂的資料結構，常用於優先佇列（Priority Queue） 實作。  
 
-1. 
+**最大堆積（Max Heap）**  
+- 根節點最大，且每個父節點值 ≥ 子節點值。
+- 適用於「動態取最大值」的情境。
 
-2.
+**最小堆積（Min Heap）**  
+- 根節點最小，且每個父節點值 ≤ 子節點值。
+- 適用於「動態取最小值」的情境。  
 
-3.
+**插入（Push）**  
+- 新值放在陣列最後
+- 進行 向上冒泡（Bubble Up），直到符合堆積性質  
 
+**刪除頂端（Pop）**  
+- 將最後一個值移到 root
+- 刪除最後一個元素
+- 進行 向下冒泡（Bubble Down），直到符合堆積性質
 
+**時間複雜度**  
+`Push()、Pop()`：$O(log n)$  
 
 # **Binary Search Tree**
 
