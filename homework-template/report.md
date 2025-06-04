@@ -342,40 +342,31 @@ for (int n : ns) {
   1️⃣ 輸入參數
   
     在 main 裡宣告：
-    
-    ```cpp
-    
-    double t_s = 0.08, t_l = 0.02, t_t = 0.001;
-    int n = 200000, m = 64, S = 2000;
-    double t_CPU = 50000;  // 供比較用
-    
-    ```
+```cpp
+double t_s = 0.08, t_l = 0.02, t_t = 0.001;
+int n = 200000, m = 64, S = 2000;
+double t_CPU = 50000;  // 供比較用   
+```
     
   2️⃣ 計算單筆輸入時間
   
-    ```cpp
-    
-    double t_record = t_s + t_l + t_t;
-    
-    ```
+```cpp   
+double t_record = t_s + t_l + t_t;  
+```
     
   3️⃣ 對多個 k 值（2, 4, 8, 16, 32, 64）進行計算
   
-    ```cpp
-    
-    double log_k_m = log(m) / log(k);
-    int num_passes = ceil(log_k_m);
-    double t_input = 2 * n * t_record * num_passes;
-    
-    ```
+```cpp  
+double log_k_m = log(m) / log(k);
+int num_passes = ceil(log_k_m);
+double t_input = 2 * n * t_record * num_passes;
+```
   4️⃣ 比較是否有接近 CPU 時間的 k
   
-    ```cpp
-    
-    if (abs(t_input - t_CPU) < 5000) {
-    cout << "  --> t_input ≈ t_CPU (可能最佳 k 值)" << endl;}
-    
-    ```
+```cpp
+if (abs(t_input - t_CPU) < 5000) {
+cout << "  --> t_input ≈ t_CPU (可能最佳 k 值)" << endl;}
+```
 ## 程式實作
 
 以下為主要程式碼：
