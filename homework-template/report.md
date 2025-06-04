@@ -369,6 +369,8 @@ for (int n : ns) {
 ### 測試案例
 
 
+### 圖表
+![輸入時間與 k 的關係圖](https://raw.githubusercontent.com/Lin3203/image/main/%E8%BC%B8%E5%85%A5%E6%99%82%E9%96%93%20t%20input%20%E8%88%87k%20%E7%9A%84%E9%97%9C%E4%BF%82%E5%9C%96.png)
 
 ### 測試結果範例  
 
