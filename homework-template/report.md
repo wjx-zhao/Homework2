@@ -13,14 +13,14 @@
 - 撰寫一個 C++ 抽象類別，類似於 ADT 5.2 中的 ADT MinPQ，該類別定義一個最小優先佇列接著，撰寫一個從此抽象類別衍生出來的 C++ 類別 MinHeap，並實作 MinPQ 中所有虛擬函式每個函式的複雜度應該和對應的 MaxHeap 函式相同。 
   
 ## 解題說明
-# 節點結構 & 插入邏輯
+### 節點結構 & 插入邏輯
 - 以 Node 結構表示樹的節點（包含 key、左右子樹指標）。
 - insert 函式用遞迴方式，根據 BST 規則放入新 key（左小右大）。
 ```cpp
 struct Node { ... };
 Node* insert(Node* root, int key) { ... }
 ```
-# 高度計算 & 中序遍歷
+### 高度計算 & 中序遍歷
 - getHeight：回傳樹的高度（root 高度為 1）。
 - inorder：中序列印樹節點，用來檢查 BST 結構正確性。
 
@@ -28,7 +28,7 @@ Node* insert(Node* root, int key) { ... }
 int getHeight(Node* root) { ... }
 void inorder(Node* root) { ... }
 ```
-# 刪除節點操作
+### 刪除節點操作
 - findMin：找到某棵樹的最小值（右子樹的中序後繼節點）。
 
 - deleteNode：
@@ -42,7 +42,7 @@ void inorder(Node* root) { ... }
 Node* findMin(Node* node) { ... }
 Node* deleteNode(Node* root, int key) { ... }
 ```
-# 隨機插入 + 計算比值
+### 隨機插入 + 計算比值
 - 隨機插入 n 筆整數（rand()）。
 計算：
 1.最終高度
